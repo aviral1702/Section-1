@@ -71,6 +71,41 @@
         font-family: Roboto;
         font-size: 30px;
       }
+
+      .section-video{
+        padding: 50px 300px;
+      }
+
+      .section-video video{
+        width: 100%;
+      }
+
+      .section-contact{
+        padding: 50px 300px;
+      } 
+
+      .text-input , .text-input-area{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 30px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      /* .contact-form{
+        border: 2px solid blue;
+      } */
+
+      .contact-btn{
+        padding: 10px 20px;
+        background-color: var(--theme-color);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
     </style>
   </head>
   <body>
@@ -115,6 +150,30 @@
             </p>
           </div>
         </div>
+      </section>
+
+      <section class="section-video">
+        <h2 class="section-title">Our Work</h2>
+      <video src="video.mp4" autoplay controls></video>
+      </section>
+
+      <section class="section-contact">
+        <h2 class="section-title">Contact Us</h2>
+        <form class="contact-form">
+          <label>Name</label>
+          <input type="text" class="text-input"/>
+
+          <label>Email</label>
+          <input type="email" class="text-input"/>
+
+          <label>Contact Number</label>
+          <input type="number" class="text-input"/>
+
+          <label>Message</label>
+          <textarea rows="5" class="text-input-area"></textarea>
+
+          <button class="contact-btn">Submit</button>
+        </form>
       </section>
     </main>
 
